@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harsha pps</title>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+	<script src="js/jquery.min.js"></script>
+
+	<link href="css/hover.css" rel="stylesheet" media="all">
+	<link href="css/devstyle.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Harsha pps  CSE NIT Warangal Web and App developer open source hobbyist" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>						
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+
+	<div id="home" class="banner">
+		<div class="container">
+			<div class="col-md-6 banner-info">
+			
+				<div class="logo">
+					<a href="#home"><img src="images/logo2.png" alt=""/></a>
+				</div>			 
+				<!-- start slider -->			 
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="tittle">
+								<h1>Passionate Programmer</h1>
+								<p>  </p>
+							</div>
+						</li>	
+						<li>
+							<div class="tittle">
+								<h1>Open Source Contributor</h1>
+								<p></p>
+
+							</div>
+						</li>	
+						<li>
+							<div class="tittle">
+								<h1>Developer</h1>
+								<p></p>
+								
+							</div>
+						</li>	
+
+					</ul>
+				</div>
+				<!-- end slider -->	
+				<a href="https://drive.google.com/file/d/0B6W0MLhxAW6nOF9Kb0N3UG1NZnc/view?usp=sharing" target="_blank" class="btn btn-default btn-lg">View Resume </a>
+
+			</div>
+
+          <div class="social-media">
+
+			<a href="https://www.linkedin.com/in/harsha-pps-87417184" target="_blank"><i class="linkedin"></i></a>
+			<a href="https://www.facebook.com/harshapps" target="_blank"><i class="facebook"></i></a>
+			<a href="https://github.com/harshapps" target="_blank"><i class="github"></i></a>
+			<a href="https://twitter.com/harshapps" target="_blank"><i class="twitter"></i></a>
+			<a href="https://plus.google.com/u/0/+harshapps" target="_blank"><i class="google"></i></a>			
+
+		</div>	
+
+			<div class="col-md-6 banner-pic">
+
+				<img src="images/harshapps.png" alt="devendradora"/>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!---->
+	<div class="navigation">	 
+		<div class="container">
+			<div class="fixed-header">
+				<div class="nav-logo">
+					<!--<a class="scroll" href="#home"><img src="images/nav-logo.png" alt=""/></a>-->
+				</div>
+				<div class="top-menu">
+					<span class="menu"> </span>
+					<nav class="cl-effect-21">
+						<ul class="top-menu2">
+							<li><a class="scroll" href="#home">HOME</a></li>	
+							<li><a class="scroll" href="#aboutme">ABOUT ME</a></li>	<li><a class="scroll" href="#work">WORK</a></li>		<li><a class="scroll" href="#contact">CONTACT</a></li>
+						</ul>
+					</nav>		
+				</div>
+				<script>
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle(500, function(){
+						});
+					});
+				</script>
+
+				<!-- script for menu -->
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+
+				<!-- script for menu -->
+				<script>
+					$(document).ready(function() {
+						var navoffeset=$(".navigation").offset().top;
+						$(window).scroll(function(){
+							var scrollpos=$(window).scrollTop(); 
+							if(scrollpos >=navoffeset){
+								$(".navigation").addClass("fixed");
+							}else{
+								$(".navigation").removeClass("fixed");
+							}
+						});
+
+					});
+				</script>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!---->
+	<!-- FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			SyntaxHighlighter.all();
+		});
+		$(window).load(function(){
+			$('.flexslider ').flexslider({
+				animation: "slide",
+				start: function(slider){
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	<!---->	
